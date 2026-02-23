@@ -1,58 +1,156 @@
-♻️ Waste Classification Using CNN
+# Waste Classification using Deep Learning (CNN)
 
-An AI-powered waste classification system built using Convolutional Neural Networks (CNN) and deployed with Streamlit.
+## Live Application
+**Deployed on Streamlit Cloud:**  
+https://waste-classification-cnn-j9hplbmo9ryldfi7dk2sjt.streamlit.app/
 
-📌 Project Overview
+---
 
-This project classifies waste images into:
+## Project Overview
 
-🌿 Organic Waste
+This project presents a Deep Learning-based Waste Classification System developed using Convolutional Neural Networks (CNN).  
 
-♻️ Recyclable Waste
+The application classifies waste images into:
 
-The model was trained on 8,000 balanced images and achieved 83.31% validation accuracy.
+- Organic Waste  
+- Recyclable Waste  
 
-🧠 Model Details
+The system is deployed as an interactive web application using Streamlit, enabling real-time predictions from uploaded images.
 
-Custom CNN Architecture
+---
 
-Image Size: 128x128
+## Problem Statement
 
-Optimizer: Adam
+Improper waste segregation is a major environmental challenge. Manual sorting is inefficient and error-prone.  
 
-Loss: Binary Crossentropy
+This project aims to automate waste classification using Computer Vision and Deep Learning techniques to support smart waste management systems.
 
-Validation Accuracy: 83.31%
+---
 
-🖥️ Tech Stack
+## Model Architecture
 
-Python
+The model is built using TensorFlow and Keras with a Convolutional Neural Network architecture consisting of:
 
-TensorFlow / Keras
+- Convolutional Layers
+- ReLU Activation
+- MaxPooling Layers
+- Fully Connected Dense Layers
+- Sigmoid Output Layer (Binary Classification)
 
-Streamlit
+Input Image Size: 128 × 128  
+Output: Binary classification (Organic / Recyclable)
 
-NumPy
+---
 
-PIL
+## Model Performance
 
-🚀 How to Run
+- Validation Accuracy: **83.31%**
+- Loss Function: Binary Crossentropy
+- Optimizer: Adam
+- Framework: TensorFlow / Keras
+
+The model achieves stable performance and generalizes reasonably well on validation data.
+
+---
+
+## Tech Stack
+
+- Python
+- TensorFlow / Keras
+- Streamlit
+- NumPy
+- Pillow (PIL)
+- Google Drive (Model Hosting)
+- Git & GitHub
+
+---
+
+## Application Features
+
+- Upload one or multiple waste images
+- Real-time prediction
+- Confidence score display
+- Clean and user-friendly interface
+- Cloud deployment using Streamlit
+
+---
+
+## Project Structure
+
+```
+waste-classification-cnn/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+├── .gitignore
+└── images/
+```
+
+Note: The trained model file is hosted externally and loaded dynamically.
+
+---
+
+## How to Run the Project Locally
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/HarshadaGodse29/waste-classification-cnn.git
+cd waste-classification-cnn
+```
+
+### 2. Create Virtual Environment (Recommended)
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+### 3. Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
+
+### 4. Run the Application
+
+```bash
 streamlit run app.py
-📷 Features
+```
 
-Multi-image upload
+---
 
-Real-time prediction
+## Screenshots
 
-Confidence score display
+### Home Interface
+![Home](images/home.png)
 
-Professional UI
+### Prediction Output
+![Prediction](images/prediction.png)
 
-🎯 Future Improvements
+---
 
-Transfer Learning (MobileNet)
+## Future Improvements
 
-Model Deployment on Cloud
+- Multi-class waste classification (Plastic, Metal, Glass, Paper)
+- Model accuracy improvement using transfer learning
+- Mobile-friendly interface
+- Integration with IoT-based smart bins
 
-Real-time camera detection
+---
+
+## Author
+
+**Harshada Godse**  
+B.E. Artificial Intelligence & Machine Learning  
+Passionate about AI, Deep Learning, and Computer Vision  
+
+LinkedIn:  
+GitHub: https://github.com/HarshadaGodse29
+
+---
+
+## License
+
+This project is developed for educational and learning purposes.
