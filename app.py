@@ -31,7 +31,7 @@ st.markdown("""
 model = load_model("waste_classifier.keras")
 
 IMG_SIZE = 128
-MODEL_ACCURACY = 83.31  # Replace with your exact accuracy
+MODEL_ACCURACY = 83.31  
 
 # UI Title
 st.markdown('<div class="title">♻️ Waste Classification System</div>', unsafe_allow_html=True)
