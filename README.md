@@ -127,7 +127,10 @@ streamlit run app.py
 ![Home](images/home.png)
 
 ### Prediction Output
-![Prediction](images/prediction.png)
+![Prediction](images/prediction1.png)
+
+### Prediction Output
+![Prediction](images/prediction2.png)
 
 ---
 
