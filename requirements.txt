@@ -1,4 +1,5 @@
 streamlit
 tensorflow
+gdown
+Pillow
 numpy
-pillow
